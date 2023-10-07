@@ -1,3 +1,8 @@
 * {
     outline: 1px dashed blue;
 }
+
+/* Header Styling */
+#bank-logo {
+    width: 10%
+}
