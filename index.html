@@ -15,19 +15,77 @@
     <nav class="navbar bg-body-tertiary d-flex">
         <div class="container-fluid justify-content-between align-items-center m-2 ">
             <a id="bank-logo" class="navbar-brand d-flex justify-content-evenly" href="#">
-                <img src="https://placehold.co/24x30" alt="Logo" 
-                        class="d-inline-block align-text-top">
+                <img src="https://placehold.co/24x30" alt="Logo" class="d-inline-block align-text-top">
                 Bootstrap
             </a>
             <h1 class="text-primary"> Teller Central</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button id="toggle-btn" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon">
+                    <ul id="toggle-list"></ul>
+                </span>
             </button>
+
         </div>
     </nav>
-
+    <div class="container">
+        <div id="customer-search-info-container" class="row"> <!-- Container for the customer look up and information section -->
+            <div id="search-container" class="col-3">
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Search</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Name</a></li>
+                      <li><a class="dropdown-item" href="#">Account Number</a></li>
+                      <li><a class="dropdown-item" href="#">Phone number</a></li>
+                      <li><a class="dropdown-item" href="#"></a>Debit Card</li>
+                      <li><a class="dropdown-item" href="#">SSN</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search">
+                  </div>
+            </div>
+            <div id="customer-personal-info" class="col-3">
+                <p>Name:</p>
+                <p>Address:</p>
+                <ul>Contact information:
+                    <li>Phone:</li>
+                    <li>Email:</li>
+                </ul>
+                <ul>Secruity Questions:
+                    <li>First car type?</li>
+                    <li>Name of high mascot?</li>
+                </ul>
+            </div>
+            <div id="customer-account-info" class="col-3">
+                <ul>Accounts:
+                    <li>Checkings:</li>
+                    <li>Savings:</li>
+                </ul>
+                <ul>Cards:
+                    <li>Debit:</li>
+                    <li>Credit:</li>
+                </ul>
+                <ul>Loans:
+                    <li>Loans:</li>
+                    <li>Mortgages:</li>
+                </ul>
+            </div>
+            <div id="customer-account-notes" class="col-3">
+                <h4>Notes:</h4>
+            </div>
+        </div>
+        <div id="transaction-container" class="row"> <!-- Container for the transaction section -->
+            <div id="transaction-type" class="col-4">
+                <ul>
+                    <li> <button>Deposit</button></li>
+                    <li><button>Withdrawl</button></li>
+                    <li><button>Transfer</button></li>
+                    <li><button>Payments</button></li>
+                    <li> <button>Other</button></li>
+                </ul>
+            </div>
+            <div class="col-4">input section</div>
+            <div class="col-4">input section</div>
+        </div> 
+    </div>
 
 
     <script src="./assets/javascript/script.js"></script>
