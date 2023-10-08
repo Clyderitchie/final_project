@@ -82,9 +82,39 @@
                     <li> <button>Other</button></li>
                 </ul>
             </div>
-            <div class="col-4">input section</div>
-            <div class="col-4">input section</div>
+            <div id="preform-transactions" class="col-4"> <!-- Where the teller will preform the transactions -->
+                A Hard coded example of what the screen will look like when teller selects the deposit button 
+                <ul>
+                    <li>Scan checks</li>
+                    <li>Money in</li>
+                    <li>Money out</li>
+                    <li>Total</li>
+                    <li>balance or not</li>
+                </ul>
+            </div>
+            <div id="tranasction-input-tracking" class="col-4"> <!-- Where the application will track the actions and inputs during the transaction -->
+                Hard coded example of tracking the transaction
+                <ul>
+                    <li>Scaned check total</li>
+                    <li>Money in total</li>
+                    <li>Money out total</li>
+                    <li>transaction total</li>
+                    <li>Apply holds</li>
+                    <li>Cancel</li>
+                </ul>
+            </div>
         </div> 
+        <div id="total-tracker" class="row"> <!-- Container for tracking the totals if user if doing a multi-transaction-->
+            <div id="total-amount-in"class="col-4">
+                <h6>Total: $1000</h6>
+            </div>
+            <div id="total-remaining"class="col-4">
+                <h6>Remaining balance: $500</h6>
+            </div>
+            <div id="balnce-section" class="col-4">
+                <h6>Balanced: yes or no</h6>
+            </div>
+        </div>
     </div>
 
 
