@@ -6,3 +6,20 @@
 #bank-logo {
     width: 10%
 }
+
+#toggle-list {
+    display: none;
+}
+
+#toggle-list.show {
+    display: block;
+}
+
+/* Customer search section */
+#dropdown-menu {
+    display: none;
+}
+
+#dropdown-menu.show {
+    display: block;
+}

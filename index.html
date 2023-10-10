@@ -20,27 +20,32 @@
             </a>
             <h1 class="text-primary"> Teller Central</h1>
             <button id="toggle-btn" class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon">
-                    <ul id="toggle-list"></ul>
-                </span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-
+            <ul id="toggle-list">
+                <li>Profile</li>
+                <li>Settings</li>
+                <li>FAQ</li>
+            </ul>
         </div>
     </nav>
     <div class="container">
-        <div id="customer-search-info-container" class="row"> <!-- Container for the customer look up and information section -->
+        <div id="customer-search-info-container" class="row">
+            <!-- Container for the customer look up and information section -->
             <div id="search-container" class="col-3">
-                <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Search</button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Name</a></li>
-                      <li><a class="dropdown-item" href="#">Account Number</a></li>
-                      <li><a class="dropdown-item" href="#">Phone number</a></li>
-                      <li><a class="dropdown-item" href="#"></a>Debit Card</li>
-                      <li><a class="dropdown-item" href="#">SSN</a></li>
+                <div id="dropdown-btn" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Search
+                    </button>
+                    <ul id="dropdown-menu" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Name</a></li>
+                        <li><a class="dropdown-item" href="#">Account Number</a></li>
+                        <li><a class="dropdown-item" href="#">Phone Number</a></li>
                     </ul>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search">
-                  </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                        placeholder="Search">
+                </div>
             </div>
             <div id="customer-personal-info" class="col-3">
                 <p>Name:</p>
@@ -77,7 +82,8 @@
                 <h4>Notes:</h4>
             </div>
         </div>
-        <div id="transaction-container" class="row"> <!-- Container for the transaction section -->
+        <!-- Container for the transaction section -->
+        <div id="transaction-container" class="row"> 
             <div id="transaction-type" class="col-4">
                 <ul>
                     <li> <button>Deposit</button></li>
@@ -87,8 +93,9 @@
                     <li> <button>Other</button></li>
                 </ul>
             </div>
-            <div id="preform-transactions" class="col-4"> <!-- Where the teller will preform the transactions -->
-                A Hard coded example of what the screen will look like when teller selects the deposit button 
+            <!-- Where the teller will preform the transactions -->
+            <div id="preform-transactions" class="col-4"> 
+                A Hard coded example of what the screen will look like when teller selects the deposit button
                 <ul>
                     <li>Scan checks</li>
                     <li>Money in</li>
@@ -97,7 +104,8 @@
                     <li>balance or not</li>
                 </ul>
             </div>
-            <div id="tranasction-input-tracking" class="col-4"> <!-- Where the application will track the actions and inputs during the transaction -->
+            <!-- Where the application will track the actions and inputs during the transaction -->
+            <div id="tranasction-input-tracking" class="col-4">
                 Hard coded example of tracking the transaction
                 <ul>
                     <li>Scaned check total</li>
@@ -108,12 +116,13 @@
                     <li>Cancel</li>
                 </ul>
             </div>
-        </div> 
-        <div id="total-tracker" class="row"> <!-- Container for tracking the totals if user if doing a multi-transaction-->
-            <div id="total-amount-in"class="col-4">
+        </div>
+         <!-- Container for tracking the totals if user if doing a multi-transaction-->
+        <div id="total-tracker" class="row">
+            <div id="total-amount-in" class="col-4">
                 <h6>Total: $1000</h6>
             </div>
-            <div id="total-remaining"class="col-4">
+            <div id="total-remaining" class="col-4">
                 <h6>Remaining balance: $500</h6>
             </div>
             <div id="balnce-section" class="col-4">
