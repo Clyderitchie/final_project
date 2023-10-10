@@ -20,5 +20,8 @@ toggleBtn.addEventListener('click', function(event){
 dropdownBtn.addEventListener('click', function(event){
     event.preventDefault();
     dropdownMenu.classList.toggle('show');
-    console.log('hello customer search btn')
+    // console.log(customerPersonalInfoArry.customer0)
 })
+
+// Customer personal info array test
+console.log(customerPersonalInfoArry.customer0[5]);
