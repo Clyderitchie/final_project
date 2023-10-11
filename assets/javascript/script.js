@@ -20,8 +20,30 @@ toggleBtn.addEventListener('click', function(event){
 dropdownBtn.addEventListener('click', function(event){
     event.preventDefault();
     dropdownMenu.classList.toggle('show');
-    // console.log(customerPersonalInfoArry.customer0)
+    // console.log(customerPersonalInfoArry.val[0])
+
+    const selectedValue = dropdownMenu.value;
+
+    const filteredInfo = filterCustomerInfo(selectedValue);
+
+    console.log(filteredInfo);
 })
 
-// Customer personal info array test
-console.log(customerPersonalInfoArry.customer0[5]);
+function filterCustomerInfo(selectedValue){
+    const filteredInfo = [];
+
+    for (const customer in customerPersonalInfoArry) {
+        const customerInfo = customerPersonalInfoArry[customerKey];
+
+        for (const info of customerInfo){
+            for (const prop in info) {
+                if(info[prop] === selectedVaule) {
+                    filteredInfo.push(info);
+                    break;
+                }
+            }
+        }
+    }
+    return filteredInfo;
+}
+
